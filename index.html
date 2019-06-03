@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Hangman game</header>
+    <main>
+        <h1>Guess The Word Below</h1>
+        <div id="underScore"></div>
+        <p>Please enter a letter to guess</p>
+
+        <input type="text" id="inputLetter">
+        <button type="button" onclick="makeGuess()" id="guessBut"> Guess</button>
+    </main>
+    <footer>
+        <div id="alert">Chance remaining :  <span id="lives">5</span></div>
+        <div id="hiddenMessage"></div>
+        <div id="hiddenMessage2">Welcome to Hangman</div>
+
+        <button type="button" onclick="reset()" id="startBut">Click to start</button>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

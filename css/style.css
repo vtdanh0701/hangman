@@ -1,0 +1,53 @@
+header, main, footer{
+    margin: 1em auto;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header{
+    height: auto;
+    width: 70%;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    font-size: 20px;
+}
+#underScore{
+    font-size : 60px;
+}
+footer{
+    text-align: center;
+}
+button{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+#hiddenMessage2{
+    font-size: 30px;
+    color: red;
+}
+
+#alert{
+    font-size: 25px;
+}
+#hiddenMessage{
+    font-size : 40px;
+    color: chocolate;
+}
+
+div{
+    text-align: center;
+}
+span{
+    font-weight: 800;
+    font-size : 30px;
+    color: crimson;
+}
