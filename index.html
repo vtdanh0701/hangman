@@ -11,20 +11,21 @@
 <body>
     <header>Hangman game</header>
     <main>
-        <h1>Guess The Word Below</h1>
-        <div id="underScore"><br> </div>
+        <img  id="hangmanpic"/>
+        <h1 id="beginprompt">Click <a href ="#" onclick="reset() ">HERE</a> to Start</h1>
+        <div id="underscore"><br> </div>
         <p id="intro"></p>
 
-        <input type="text" id="inputLetter">
-        <button class="button" type="button" onclick="makeGuess()" id="guessBut"> Guess</button>
+        <input type="text" id="inputletter" placeholder="Enter letter">
+        <button class="button" type="button" onclick="makeGuess()" id="guessbut"> Guess</button>
     </main>
     <footer>
         <div id="alert">Chance remaining :  <span id="lives">5</span></div>
-        <div id="hiddenMessage"></div>
-        <div id="hiddenMessage2">Welcome to Hangman</div>
+        <div id="hiddenmessage"></div>
+        <div id="hiddenmessage2">Welcome to Hangman</div>
 
-        <button class="button" type="button" onclick="reset()" id="startBut">Click to start</button>
-        <p id="copyRight">Copyright by DV</p>
+        <button class="button" type="button"  onclick="reset()" id="startbut">Restart</button>
+        <p id="copyright">Copyright by DV</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

@@ -2,11 +2,16 @@ header, main, footer{
     margin: 1em auto;
     font-family: 'Shadows Into Light', cursive;
 }
-
+a{
+    font-size: 40px;
+    text-decoration: none;
+    color: red;
+}
 header{
+    margin-top : 20px;
     height: auto;
     width: 70%;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
 
@@ -17,35 +22,48 @@ main{
 }
 
 h1{
+    margin-top: 5px;
     font-size: 20px;
 }
-#underScore{
-    font-size : 60px;
+#underscore{
+    font-size : 35px;
+    margin-top : 20px;
 }
 footer{
     text-align: center;
 }
 button{
     font-family: 'Shadows Into Light', cursive;
+}
+
+#guessbut{
     font-size: 20px;
 }
 
 #intro{
     color: blue;
 }
-#hiddenMessage2{
+#hiddenmessage2{
     font-size: 30px;
     color: red;
 }
-
+#startbut{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+#startbut:hover{
+    background-color: aqua;
+    color: black;
+}
 #alert{
     font-size: 25px;
 }
-#hiddenMessage{
+#hiddenmessage{
     font-size : 40px;
     color: chocolate;
 }
-#copyRight{
+#copyright{
     margin: 150px;
 }
 div{
@@ -68,4 +86,10 @@ input{
 .button:hover{
     background-color: burlywood;
     color: aliceblue;
+}
+
+img{
+    margin-top: 10px;
+    width: 15%;
+    height: 15%;
 }
