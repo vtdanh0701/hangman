@@ -1,8 +1,8 @@
 // Variables declarations
-var wordBank = ["blue","red","orange"]
+var wordBank = ["blue","red","orange","shark","arpegios","milestone","flowers","bumblebee"];
 var underScore = [];
 var maxLives = 5; 
-var remainingLives = 0;
+var remainingLives;
 var guessWord = [];
 var guessedLetter =[];
 var endGame = false; 
@@ -25,6 +25,7 @@ function reset(){
     }
     document.getElementById("startBut").textContent = "Restart";
     document.getElementById("hiddenMessage2").textContent = " ";
+    document.getElementById("intro").textContent = "Please enter a letter to guess"
     updateDisplay();
 }
 function updateDisplay(){
@@ -38,8 +39,12 @@ function updateDisplay(){
 function makeGuess(inputLetter){
     var inputRaw = document.getElementById("inputLetter").value;
     var inputLetter = inputRaw.toLowerCase();
+    if(guessWord.length === 0){
+        document.getElementById("hiddenMessage2").textContent = "Please click button to begin";
+
+    }
     if(remainingLives > 0 ){
-        if(/[^a-zA-Z0-9\-\/]/.test(inputLetter)){
+        if(/[^a-zA-Z\-\/]/.test(inputLetter)){
             document.getElementById("hiddenMessage2").textContent = "Not a letter, try again";
 
         }
@@ -78,7 +83,7 @@ function makeGuess(inputLetter){
     }
 
 function checkWin(){
-    if(underScore.indexOf("_") === -1){
+    if(underScore.indexOf("_") === -1 && guessedLetter.length > 0){
         win = true;
         document.getElementById("hiddenMessage").textContent = "Congratulation ! You win !!"
         document.getElementById("hiddenMessage2").textContent = " ";

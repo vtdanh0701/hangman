@@ -30,6 +30,9 @@ button{
     font-size: 20px;
 }
 
+#intro{
+    color: blue;
+}
 #hiddenMessage2{
     font-size: 30px;
     color: red;
@@ -42,7 +45,9 @@ button{
     font-size : 40px;
     color: chocolate;
 }
-
+#copyRight{
+    margin: 150px;
+}
 div{
     text-align: center;
 }
@@ -50,4 +55,17 @@ span{
     font-weight: 800;
     font-size : 30px;
     color: crimson;
+}
+
+input{
+    font-size: 20px; 
+    
+}
+
+.button{
+    border-radius: 4px;
+}
+.button:hover{
+    background-color: burlywood;
+    color: aliceblue;
 }
