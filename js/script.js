@@ -19,7 +19,7 @@ function reset(){
     win = false;
     gameStart = true;
     hidden = "visible";
-    //remainingLives = maxLives;
+    remainingLives = 5;
     guessedLetter = [];
     guessWord = [];
     underScore = [];
